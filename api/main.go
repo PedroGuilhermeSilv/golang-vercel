@@ -3,9 +3,10 @@ package main
 import (
 	"net/http"
 
-	"github.com/pedro/dev/goDeployVercel/api/handler"
+	"github.com/PedroGuilhermeSilv/golang-vercel"
 )
 
 func main() {
 	http.HandleFunc("/", handler.Handler)
 	http.ListenAndServe(":8080", nil)
+}
